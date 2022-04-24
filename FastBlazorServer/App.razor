@@ -1,4 +1,5 @@
-﻿<FluentDesignSystemProvider AccentBaseColor="#107C41" >
+﻿@* https://github.com/microsoft/fast-blazor/blob/main/src/Microsoft.Fast.Components.FluentUI/Components/FluentDesignSystemProvider.razor#L69 *@
+<FluentDesignSystemProvider FillColor="#3b3b3b" NeutralBaseColor="#3b3b3b" AccentBaseColor="#da1a5f" AccentFillRestDelta="1" >
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
             <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>

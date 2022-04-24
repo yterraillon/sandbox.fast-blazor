@@ -1,5 +1,31 @@
 ﻿@page "/Design-System"
+@* https://github.com/microsoft/fast-blazor *@
+@* trying to look like https://www.fast.design/ *@
 <h3>DesignSystem</h3>
+
+<FluentCard>
+  <div class="image-container">
+    <FluentBadge Color="Color.Highlight" Fill="Fill.Highlight" class="badge">Badge</FluentBadge>
+    <FluentBadge Color="Color.Lowlight" Fill="Fill.Lowlight" class="badge">Badge</FluentBadge>
+  </div>
+  <div class="">
+      <h3>Example card</h3>
+      <p>
+          At purus lectus quis habitant commodo, cras. Aliquam malesuada
+          velit a tortor. Felis orci tellus netus risus et ultricies
+          augue aliquet. Suscipit mattis mus amet nibh...
+      </p>
+      <FluentDivider></FluentDivider>
+      <FluentButton Appearance="@Appearance.Neutral">Neutral</FluentButton>
+      <FluentButton Appearance="@Appearance.Accent">Accent</FluentButton>
+      <FluentButton Appearance="@Appearance.Hypertext">HyperText</FluentButton>
+      <FluentButton Appearance="@Appearance.Lightweight">Lightweight</FluentButton>
+      <FluentButton Appearance="@Appearance.Outline">Outline</FluentButton>
+      <FluentButton Appearance="@Appearance.Stealth">Stealth</FluentButton>
+      <FluentButton Appearance="@Appearance.Filled">Filled</FluentButton>
+  </div>
+ 
+</FluentCard>
 
 @code {
     
