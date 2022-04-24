@@ -1,6 +1,7 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
+// Source https://github.com/microsoft/fast-blazor
+
 using FastBlazorServer.Data;
+using Microsoft.Fast.Components.FluentUI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddFluentUIComponents();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
